@@ -1,6 +1,6 @@
 import React from 'react';
-import GeneralHeader from "../components/common/GeneralHeader";
-import Banner6 from "../components/banner/banner6/Banner6";
+import Header from "../components/common/Header";
+
 import FaqCategories from "../components/other/categories/FaqCategories";
 import AccordionList from "../components/other/AccordionList";
 import SectionsHeading from "../components/common/SectionsHeading";
@@ -15,10 +15,8 @@ function Faq() {
     return (
         <main className="faq-page">
             {/* Header */}
-            <GeneralHeader />
+            <Header />
 
-            {/* Banner */}
-            <Banner6 title="Hello, How Can We Help You?" />
 
             {/* Category */}
             <section className="hiw-area section-bg padding-top-80px padding-bottom-50px after-none text-center">

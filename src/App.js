@@ -2,16 +2,14 @@ import React, { useRef, useEffect } from 'react';
 import { useLocation, Switch } from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
+import 'react-dates-gte-react-17-21.8.0-version-fixed/initialize'; // import initialize from react-dates
+
 
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
 
 // Pages
 import Home from "./pages/homes/Home";
-import Home2 from './pages/homes/Home2';
-import Home3 from './pages/homes/Home3';
-import Home4 from './pages/homes/Home4';
-import Home5 from './pages/homes/Home5';
 import AllCategories from './pages/categories/AllCategories';
 import AllLocations from './pages/categories/AllLocations';
 import TopPlaces from "./pages/categories/TopPlaces";
@@ -61,10 +59,6 @@ const App = () => {
         children={() => (
           <Switch>
             <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-              <AppRoute path="/index2" component={Home2} />
-              <AppRoute path="/index3" component={Home3} />
-              <AppRoute path="/index4" component={Home4} />
-              <AppRoute path="/index5" component={Home5} />
               <AppRoute path="/all-categories" component={AllCategories} />
               <AppRoute path="/all-locations" component={AllLocations} />
               <AppRoute path="/top-place" component={TopPlaces} />
